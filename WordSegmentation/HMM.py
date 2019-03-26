@@ -67,7 +67,9 @@ class HMM(object):
                 words |= set(word_list)
                 line_list = line.split()
                 line_state = []
-                for w in line_list:
-                    line_state.extend()
+                for word in line_list:
+                    line_state.extend(makeLabel(word))
+
+
     def vertibi(self, text, states, strt_p, trans_p, emit_p):
         pass
